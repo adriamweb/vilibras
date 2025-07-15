@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.principal{
+position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+form{
+    padding: 18px 63px 25px 27px;
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-color: black;
+    padding: 10px;
+    width: 100%;
+}
+
+#obs{
+    font-size: 13px;
+    color: red;
+    margin-top: 5px;
+}
+
+legend{
+    padding: 0 8px 0 8px;
+    margin-left: 50px;
+    font-size: 22px;
+}
+
+.secundaria input{
+    outline: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 450px;
+    height: 20px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.categorias{
+    margin: 5px 0px 25px 5px;
+}
+
+.categorias label, .campos label{
+    margin-left: 15px;
+}
+
+#srcLabel{
+    margin-left: 30px;
+}
+
+label, p{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.secundaria{
+    margin-bottom: 15px;
+}
+
+#idRemove{
+    padding-right: 30px;
+    margin-bottom: 35px;
+}
+
+button{
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid black 2px;
+    border-radius: 5px;
+    width: 80px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    font-weight: 400;
+    justify-content: end;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 5px;  
+}
