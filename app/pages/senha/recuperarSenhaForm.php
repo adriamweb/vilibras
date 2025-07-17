@@ -182,7 +182,7 @@
   </header>
   <div class="container" id="container">
     <h2>Redefinição de Senha</h2>
-    <form action="../../actions/senha/recuperarSenha.php" method="POST">
+    <form action="" method="POST">
       <div class="form-group">
         <span class="emoji">📧</span>
         <label for="email">E-mail:</label>

@@ -12,11 +12,8 @@
 </head>
 <body>
     <div class="scroll-btn"><a href="../landingpage/landingpage.php"><img id="home-icon" src="../../../public/images/home-icon.png" alt=""><div></a><a href="../usuario/cadastro.php"><img class="options" src="../../../public/images/enter_1828395.png" alt=""></a> <a href="../usuario/login.php"><img class="options" src="../../../public/images/user-add_3917717.png" alt=""></a></div></div>
-    <!-- <div class="main-p"></div> -->
     <div id="main">
-        <div id="top">
-            <h1 id="top-h1">vilibras.</h1>
-        </div>
+
         <div id="center">
             <div class="content" id="content">
                 <h4>SOBRE NÓS</h4>
@@ -37,46 +34,7 @@
 
             </div>
         </div>
-        <div id="bottom">
-            <h1 id="bottom-h1">vilibras.</h1>
-            <img id="gif" src="../../../public/images/mouse-down.gif"></img>
-        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#main",
-                start: "50% 50%",
-                end: "150% 50%",
-                scrub: 2,
-                pin: true
-            }
-        });
-        tl.to("#center", {
-                height: "100vh",
-            }, 'a')
-            .to("#top", {
-                top: "-60%",
-            }, 'a')
-            .to("#bottom", {
-                bottom: "-50%",
-            }, 'a')
-            .to("#top-h1", {
-                top: "60%"
-            }, 'a')
-            .to("#bottom-h1", {
-                bottom: "-30%"
-            }, 'a')
-            .to("#center-h1", {
-                top: "-10%"
-            }, 'a')
-            .to(".content", {
-                delay: -0.2,
-                marginTop: "0%"
-            });
-    </script>
 </body>
 </html>
