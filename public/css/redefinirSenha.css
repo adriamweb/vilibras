@@ -1,0 +1,117 @@
+:root {
+    --dark-900: #03000a;
+    --dark-500: #101012;
+    --dark-100: #202020;
+    --light-900: #ffffff;
+    --light-500: #f0f0f0;
+    --light-100: #dcdcdc;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'JetBrains Mono', monospace;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.container {
+    background-color: var(--dark-500);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--dark-100);
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    background-color: var(--dark-100);
+    color: white;
+}
+
+input[type="email"].light {
+    border: 1px solid var(--light-100);
+    background-color: var(--light-100);
+    color: black;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.theme-toggle {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.theme-toggle.light {
+    color: black;
+}
+
+
+.status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.status-message.success {
+    background-color: #4caf50b0;
+    color: white;
+    opacity: 0.5;
+    border-radius: 0;
+}
+
+.status-message.error {
+    background-color: #f44336;
+    color: white;
+    opacity: 0.5;
+    border-radius: 0;
+}

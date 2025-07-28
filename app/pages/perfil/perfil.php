@@ -63,7 +63,7 @@ require_once("../base/cabecalho.php");
                             </div>
                         </form>
                         <div class="profile-buttons">
-                            <a href="../senha/recuperarSenhaForm.php"><button class="btn-password"><i class="fas fa-key"></i> Alterar Senha</button></a>
+                            <button class="btn-password" onclick="document.getElementById('popup').style.display = 'flex'; document.getElementsByTagName('body')[0].style.overflow = 'hidden'"><i class="fas fa-key"></i> Alterar Senha</button>
                         </div>
                     </div>
                     <!-- --- dados --- -->
@@ -78,14 +78,31 @@ require_once("../base/cabecalho.php");
                                 <p class="title-resp"  id="tipo">Aluno</p>
                             </div>
                         </div>
-                        <!-- <div class="profile-buttons">
-                            <button class="btn-save"><i class="fa-solid fa-pen-to-square"></i>Alterar dados</button>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <div class="popup" id="popup">
+        <div class="container" id="container">
+            <h2>Redefinição de Senha</h2>
+            <form action="" method="POST">
+                <div class="form-group">
+                    <span class="emoji">📧</span>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite o seu melhor email" required>
+                </div>
+
+                <div class="buttons">
+                    <button class="button-cancel" onclick="document.querySelector('.popup').style.display = 'none'; document.getElementsByTagName('body')[0].style.overflow = 'auto'">Cancelar</button>
+                    <button class="button-submit" type="submit">Enviar</button>
+                </div>
+            </form>
+            
+            <div id="status-message" class="status-message" style="display: none;"></div>
+        </div>
+    </div>
 
 <?php
 require_once("../base/footer.php");

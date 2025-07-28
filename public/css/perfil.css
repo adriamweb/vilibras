@@ -8,7 +8,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
+  min-height: 100vh;
   background-color: var(--main-bg);
   padding: 20px;
   flex-direction: column;
@@ -239,4 +239,94 @@ main {
 }
 
 /* Main */
+/* ---------------------------------------------------------------- */
+
+/* Popup redefinir senha */
+
+.popup {
+  display: none;
+  z-index: 999;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* cinza escuro com 50% de opacidade */
+}
+
+.container {
+  background-color: #101012;
+  color: white;
+  padding: 30px;
+  position: fixed;
+  right: 40vw;
+  top: 40vh;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.popup label {
+  margin-right: 10px;
+}
+
+.popup input {
+  padding: 10px;
+  border: 1px solid var(--dark-100);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  background-color: var(--dark-100);
+  color: white;
+}
+
+.popup h2 {
+  margin-bottom: 8px;
+}
+
+.popup .buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.button-submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+}
+
+.button-submit:hover {
+  background-color: #45a049;
+}
+
+.button-cancel{
+  background-color: #dd3c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+}
+
+.button-cancel:hover{
+  background-color: #c23333;
+}
 /* ---------------------------------------------------------------- */
