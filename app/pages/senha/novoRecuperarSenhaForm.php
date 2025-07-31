@@ -19,6 +19,8 @@
     <header>
         <?php
         require_once("../base/cabecalho.php");
+        $status = $_GET['status'] ?? '';
+        $message = $_GET['message'] ?? '';
         ?>
     </header>
 
@@ -27,7 +29,7 @@
 
         <div class="container" id="container">
             <h2>Redefinição de Senha</h2>
-            <form action="" method="POST">
+            <form action="../../actions/senha/novoRecuperarSenha.php" method="POST">
                 <div class="form-group">
                     <span class="emoji">📧</span>
                     <label for="email">E-mail:</label>
@@ -35,7 +37,16 @@
                 </div>
                 <button type="submit">Enviar</button>
             </form>
-            <div id="status-message" class="status-message" style="display: none;"></div>
+
+        <?php if ($message): ?>
+            <div id="status-message" class="status-message <?= htmlspecialchars($status) ?>" style="display: block;">
+                <?= htmlspecialchars($message) ?>
+            </div>
+        <?php else: ?>
+            
+        <div id="status-message" class="status-message" style="display: none;"></div>
+                <?php endif; ?>
+        <div id="status-message" class="status-message" style="display: none;"></div>
         </div>
 
 
